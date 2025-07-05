@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Question10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter gender (Male/Female): ");
+        String gender = sc.next().toLowerCase();  
+
+        System.out.print("Enter age: ");
+        int age = sc.nextInt();
+
+        if (age < 1 || age > 100) {
+            System.out.println("Invalid age. Please enter age between 1 and 100.");
+            return;
+        }
+
+        switch (gender) {
+            case "female":
+                if (age <= 58)
+                    System.out.println("The percentage of interest is 8.2%");
+                else
+                    System.out.println("The percentage of interest is 9.2%");
+                break;
+
+            case "male":
+                if (age <= 58)
+                    System.out.println("The percentage of interest is 8.4%");
+                else
+                    System.out.println("The percentage of interest is 10.5%");
+                break;
+
+            default:
+                System.out.println("Invalid gender. Please enter 'Male' or 'Female'.");
+        }
+    }
+}

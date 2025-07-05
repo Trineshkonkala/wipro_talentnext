@@ -1,0 +1,25 @@
+package java_fundamentals;
+
+import java.util.Scanner;
+
+public class Question10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter gender");
+		String gender = sc.next();
+		System.out.println("Enter age");
+		int age = sc.nextInt();
+		if ((gender == "female") & (age >= 1 && age <= 58)) {
+			System.out.println("The percentage of intrest is 8.2%");
+		} else {
+			System.out.println("The percentage of intrest is 9.2%");
+		}
+		if ((gender == "male") & (age >= 1 && age <= 58)) {
+			System.out.println("The percentage of intrest is 8.4%");
+		} else {
+			System.out.println("The percentage of intrest is 10.5%");
+
+	  }
+	}
+
+}

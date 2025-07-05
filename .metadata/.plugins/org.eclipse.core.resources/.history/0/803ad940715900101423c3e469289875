@@ -1,0 +1,15 @@
+package java_fundamentals;
+
+public class Short {
+
+	public static void main(String[] args) {
+		int();
+
+	}
+
+	private static void int() {
+		int a = 10;
+		int b = 2;
+		System.out.println();
+	}
+}
