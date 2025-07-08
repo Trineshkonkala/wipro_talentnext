@@ -1,0 +1,13 @@
+package java_fundamentals;
+
+import java.util.Scanner;
+import java.util.Arrays;
+public class Question22 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] arr = new int[5];
+		System.out.println(Arrays.toString(arr));
+	}
+
+}

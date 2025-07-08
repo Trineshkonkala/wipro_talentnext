@@ -1,0 +1,22 @@
+package java_fundamentals;
+
+import java.util.Scanner;
+public class Question21 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int reversed = 0;
+		while (num != 0) {
+			int digit = num % 10;
+			reverseed = reversed * 10 + digit;
+			num = num / 10;
+			if (num == reversed) {
+				System.out.println(num + " is a palindrome ");
+			}else {
+				System.out.println(num + " is not a palindrome ");
+			}
+		}
+	}
+
+}

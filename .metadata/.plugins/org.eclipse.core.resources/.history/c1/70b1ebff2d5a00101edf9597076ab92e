@@ -1,0 +1,14 @@
+package java_fundamentals;
+
+public class Question22 {
+	public static void main(String[] args) {
+		int [] arr = {10, 20, 30, 40};
+		int sum = 0;
+		for (int i = 1; i < arr.length - 1; i++) {
+			sum = sum + arr[i];
+		}
+		double avg = (double)sum / arr.length;
+		System.out.println("The sum of the array " + sum);
+		System.out.println("The average of the array " + avg);
+	}
+}
